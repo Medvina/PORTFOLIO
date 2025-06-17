@@ -1,0 +1,249 @@
+/* === GENERAL === */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 50px;
+}
+
+.header-left h2 strong {
+    color: orange;
+}
+
+
+/* === MENU === */
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover,
+.menu li a:active {
+    background-color: #c83f3f;
+    border-radius: 5px;
+}
+
+/* === ACCUEIL === */
+#acceuil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.presentation-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.presentation-image img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid orange;
+    border-radius: 5%;
+}
+
+.special {
+    color: orange;
+}
+
+p {
+    font-size: 18px;
+    color: black;
+}
+
+/* === A PROPOS === */
+#a_propos {
+    background-color: #838383;
+    padding: 50px 0;
+    color: orange;
+    width: 100%;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.about-image img {
+    border-radius: 50%;
+    border: 5px solid orange;
+}
+
+/* === PROJETS === */
+#projets {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    color: orange;
+}
+
+.projets-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.projet-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* === COMPÉTENCES === */
+#competences {
+    background-color: #839383;
+    padding: 50px 0;
+    color: white;
+}
+
+.competence-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.competence-item {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    width: 40%;
+    color: black;
+}
+
+.competence-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.competence-item input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px;
+    accent-color: orange;
+}
+
+/* === CONTACT === */
+#contact {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+span{
+    color: orange;
+}
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group.half-width {
+    flex: 1;
+    text-align: left;
+}
+
+.form-group.full-width {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+/* === BOUTON === */
+.submit-btn {
+    background-color:orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.submit-btn1 {
+    background-color:orange;
+    color: white;
+  text-align: center;
+  align-items: right;
+}
+.submit-btn:hover {
+    background-color: #a52a2a;
+}
+
+/* === FOOTER === */
+footer {
+    background-color:gray;
+    color: white;
+    padding: 15px;
+}
+h1 {
+font-size: 21px;
+align-items: center;  
+}  
+
+h2 {
+  align-items: center; 
+  text-align: center; 
+}
+h3 {
+  text-align: left; 
+  font-size: 12px;
+} 
+h4 {
+  text-align: right; 
+  font-size: 10px;
+} 
