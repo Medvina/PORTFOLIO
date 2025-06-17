@@ -1,10 +1,10 @@
 // Fonction appelée directement depuis l'attribut "onsubmit" dans le HTML
 function validerFormulaire() {
-  let prenom = document.forms["contactForm"]["prenom"].value.trim();
-  let nom = document.forms["contactForm"]["nom"].value.trim();
-  let projet = document.forms["contactForm"]["projet"].value.trim();
-  let message = document.forms["contactForm"]["message"].value.trim();
-  let email = document.forms["contactForm"]["email"].value.trim();
+  let prenom =document.getElementById("prenom").value.trim();
+  let nom = document.getElementById("nom").value.trim();
+  let projet =document.getElementById("projet").value.trim();
+  let message = document.getElementById("message").value.trim();
+  let email = document.getElementById("email").value.trim();
   if (!prenom || !nom || !projet || !message) {
     alert("Veuillez remplir tous les champs du formulaire.");
     return false;
