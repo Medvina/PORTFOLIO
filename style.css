@@ -119,6 +119,13 @@ p {
     width: 30%;
     border-radius: 10px;
     text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform: scale(1);
+    box-shadow: none;
+}
+.projet-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
 
 /*COMPÉTENCES*/
@@ -214,12 +221,7 @@ textarea {
     font-size: 16px;
     cursor: pointer;
 }
-.submit-btn1 {
-    background-color:orange;
-    color: white;
-  text-align: center;
-  align-items: right;
-}
+
 .submit-btn:hover {
     background-color: #a52a2a;
 }
