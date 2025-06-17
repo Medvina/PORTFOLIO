@@ -15,9 +15,9 @@ function validerFormulaire() {
 }
 
 
-var projets = document.getElementsByClassName("projet-item");
+let projets = document.getElementsByClassName("projet-item");
 
-for (var i = 0; i < projets.length; i++) {
+for (i = 0; i < projets.length; i++) {
   projets[i].onmouseover = function () {
     this.style.transform = "scale(1.05)";
     this.style.transition = "transform 0.3s ease-in-out";
