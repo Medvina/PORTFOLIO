@@ -1,4 +1,4 @@
-/* === GENERAL === */
+/*GENERAL*/
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -20,7 +20,7 @@ header {
 }
 
 
-/* === MENU === */
+/*MENU*/
 .menu {
     display: flex;
     list-style: none;
@@ -41,7 +41,7 @@ header {
     border-radius: 5px;
 }
 
-/* === ACCUEIL === */
+/*ACCUEIL*/
 #acceuil {
     display: flex;
     justify-content: space-between;
@@ -72,7 +72,7 @@ p {
     color: black;
 }
 
-/* === A PROPOS === */
+/*A PROPOS*/
 #a_propos {
     background-color: #838383;
     padding: 50px 0;
