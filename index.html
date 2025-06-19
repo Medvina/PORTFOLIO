@@ -19,6 +19,7 @@
         <li><a href="#a_propos">À propos</a></li>
         <li><a href="#projets">Projets</a></li>
         <li><a href="#competences">Compétences</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -47,7 +48,9 @@
         <p>Je suis <span class="special">Medvina</span>, passionnée par la création de sites web modernes et interactifs.</p>
         <p>Le <span class="special">Web</span> me passionne énormément. J'aime apprendre et construire des projets utiles.</p>
         <p> Je cherche à améliorer mes compétences en Javascript, HTML et CSS. J'adore transformer mes idées en projets concrets.</p>
-        <button class="submit-btn">Télécharger mon CV</button>
+      <button type="submit" class="submit-btn">
+        <a href="CV DE MEDVINA ST-CLAIR.pdf"download> Télécharger mon CV</a>
+        </button>
       </div>
       <div class="about-image">
         <img src="Mia.jpg" width="150" height="200" alt="Photo Medvina">
@@ -77,13 +80,15 @@
       <div class="projet-item">
         <p class="description">Portfolio personnel</p>
         <p class="competences">Ce site même</p>
-        <button class="submit-btn">Voir</button>
+        <button class="submit-btn">
+        <a href="https://medvina.github.io/PORTFOLIO/#projets">Voir</a>
+        </button>
       </div>
     </div>
-</div>
-
+  </div>
   
-  <div id="competences">
+  
+<div id="competences">
     <h2 class="title">Compétences</h2>
     <div class="competence-container">
       <div class="competence-item">
@@ -104,6 +109,18 @@
       </div>
     </div>
 </div>
+
+<div id="hobbies">
+    <h2 class="title">Hobbies</h2>
+        <ul>
+            <li><em>Volley-Ball</em></br></li>
+            <li><em> Danse</em></br></li>
+            <li><em> Lecture</em></br></li>
+            <li><em> Basket-ball</em></br></li>
+            <li><em> Ecriture</em></br></li>
+            <li><em> Randonnée</em></br></li>
+        </ul>
+</div>
  
   
   <div id="contact">
@@ -113,29 +130,29 @@
       <div class="form-row">
         <div class="form-group half-width">
           <label for="prenom">Prénom</label>
-          <input type="text" name="prenom" id="prenom">
+          <input type="text" name="prenom" id="prenom" placeholder="Votre prénom">
         </div>
         <div class="form-group half-width">
           <label for="nom">Nom</label>
-          <input type="text" name="nom" id="nom">
+          <input type="text" name="nom" id="nom" placeholder="Votre nom">
         </div>
       </div>
       <div class="form-group full-width">
         <label for="projet">Votre sujet</label>
-        <input type="text" name="projet" id="projet">
+        <input type="text" name="projet" id="projet" placeholder="Votre sujet">
       </div>
       <div class="form-group full-width">
         <label for="message">Message</label>
-        <textarea name="message" id="message" rows="5"></textarea>
+        <textarea name="message" id="message" rows="5" placeholder="Votre message"></textarea>
       </div>
       <div class="form-group full-width">
         <label for="email">Email :</label>
-      <input type="email" id="email" required><br>
+        <input type="email" id="email" placeholder="Votre email"><br>
       </div>
       <button type="submit" class="submit-btn">Envoyer</button>
-    
+
     </form>
-</div>
+  </div>
 
 </div>
 
@@ -144,6 +161,28 @@
   <h4> Tous droits réservés- 2025</h4>
 </footer>
 
-<script src="script.js"></script>
+<script>
+    function validerFormulaire() {
+  let prenom =document.getElementById("prenom").value;
+  let nom = document.getElementById("nom").value;
+  let projet =document.getElementById("projet").value;
+  let message = document.getElementById("message").value;
+  let email = document.getElementById("email").value;
+  if (prenom===" " || nom===" " || projet===" " || message===" " || email===" ") {
+    alert("Veuillez remplir tous les champs du formulaire(pas seulement des espaces).");
+    return false;
+  }
+  if (!prenom || !nom || !projet || !message || !email ) {
+    alert("Veuillez remplir tous les champs du formulaire(pas seulement des espaces).");
+    return false;
+  }
+  if (!email.includes("@")) {
+    alert("Adresse email invalide.");
+    return false;
+  }
+  alert("Merci " + prenom + " " + nom + ", votre message a bien été envoyé !");
+  return true;
+}
+</script>
 </body>
 </html>
